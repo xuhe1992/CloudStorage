@@ -14,11 +14,6 @@ from flask import render_template, url_for
 app = flask.Flask(__name__, static_folder="static", template_folder="template")
 
 
-from storage.view.download import upload
-# app.register_blueprint("")
-app.add_url_rule('')
-
-
 @app.route("/")
 def index():
     return render_template("upload.html")
